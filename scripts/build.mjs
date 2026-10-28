@@ -9,7 +9,7 @@ const project = item => `<article class="project" id="${escape(item.id)}">
   <p class="meta">${escape(item.status)}</p>
   <h3>${escape(item.title)}</h3>
   <p>${escape(item.description)}</p>
-  <p class="project-role">My role: ${escape(item.role)}</p>
+  ${item.role ? `<p class="project-role">My role: ${escape(item.role)}</p>` : ''}
   <p class="project-tools">Tools: ${item.tags.map(escape).join(', ')}</p>
   <p class="project-links">${item.links.map(link => `<a href="${escape(link.url)}">${escape(link.label)}</a>`).join('')}</p>
 </article>`;
@@ -25,7 +25,9 @@ const replacements = {
   MORE_PROJECTS: content.projects.slice(3).map(project).join('\n'),
   EXPERIENCE: content.experience.map(entry).join('\n'),
   LEADERSHIP: content.leadership.map(entry).join('\n'),
-  TOOLKIT: content.toolkit.map(item => `<p class="tool-entry"><strong>${escape(item.title)}:</strong> ${item.tools.map(escape).join(', ')}.</p>`).join('\n')
+  TOOLKIT: content.toolkit.map(item => `<p class="tool-entry"><strong>${escape(item.title)}:</strong> ${item.tools.map(escape).join(', ')}.</p>`).join('\n'),
+  AWARDS: `<ul class="plain-list">${content.awards.map(item => `<li><strong>${escape(item.title)}</strong><br>${escape(item.detail)}<br><span class="muted">${escape(item.date)}</span></li>`).join('\n')}</ul>`,
+  TRAINING: `<ul class="plain-list">${content.training.map(item => `<li><strong>${escape(item.title)}</strong><br>${escape(item.detail)} · ${escape(item.date)}</li>`).join('\n')}</ul>`
 };
 for (const [key, value] of Object.entries(replacements)) {
   const marker = `<!-- ${key} -->`;

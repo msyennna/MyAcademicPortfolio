@@ -14,7 +14,7 @@
         "YOLOv8n",
         "Flask"
       ],
-      "description": "An ongoing study using image recognition to detect aphid damage in bell peppers and show the results in an offline monitoring interface.",
+      "description": "An ongoing, university-funded study on detecting aphid damage in bell pepper plants (Capsicum annuum). Raspberry Pi 5 and YOLOv8n process images, while a Flask web interface shows the results and supports monitoring without an internet connection.",
       "role": "Student researcher · Collaborative research",
       "overview": "Development of an Edge-IoT-Based Aphid Damage Detection using YOLOv8n and Offline Monitoring using Flask Web Interface for Bell Pepper (Capsicum annuum) on a Raspberry Pi 5. This university-funded research is ongoing.",
       "contributions": [
@@ -40,7 +40,7 @@
         "Python",
         "MQTT/TLS"
       ],
-      "description": "A prototype that collects motion sensor data and sends it to a walking and running classifier. I developed Python tools to record labeled data and review trial results.",
+      "description": "An RT-Thread prototype that streams six-axis accelerometer and gyroscope data over Wi-Fi and MQTT/TLS to a cloud-based walking and running classifier. Python tools capture labeled readings and prepare sensor data for classification.",
       "role": "Contributor · Sensor data collection & evaluation",
       "overview": "An RT-Thread prototype streams accelerometer and gyroscope readings over Wi-Fi and MQTT/TLS to a cloud-based walking/running classifier.",
       "contributions": [
@@ -57,17 +57,17 @@
     },
     {
       "id": "monitor",
-      "title": "Real-time room monitor",
+      "title": "Real-time multisensor room monitor",
       "category": "embedded",
       "kind": "EMBEDDED · REAL-TIME SYSTEMS",
       "status": "Simulated prototype",
       "visual": "monitor",
       "tags": [
-        "STM32",
+        "STM32 Blue Pill",
         "FreeRTOS",
-        "Wokwi"
+        "OLED"
       ],
-      "description": "A simulated room monitor that reads sensors, shows readings on an OLED screen, and handles motion and temperature alarms.",
+      "description": "An STM32 Blue Pill room monitor with FreeRTOS tasks for sensors, an OLED display, rotary-encoder input, motion monitoring, and temperature alarms. Queues, event groups, and a serial mutex coordinate the tasks; documentation covers 10 functional checks.",
       "role": "Firmware development · STM32 & FreeRTOS",
       "overview": "A multisensor room monitor on an STM32 Blue Pill, simulated in Wokwi. Separate FreeRTOS tasks handle sensor acquisition, display, rotary input, motion, and alarms.",
       "contributions": [
@@ -98,7 +98,7 @@
         "Qt Widgets",
         "SQLite"
       ],
-      "description": "A desktop prototype for managing product records, user accounts, and warehouse occupancy. Occupancy is updated manually across 12 storage areas.",
+      "description": "A desktop prototype for creating, viewing, updating, and deleting product records, with account registration and login. Warehouse occupancy is updated manually across 12 areas.",
       "role": "Co-developer · Desktop software prototype",
       "overview": "A software prototype demonstrating an inventory and warehouse management concept using C++17, Qt Widgets, and SQLite. Warehouse occupancy is updated manually in the prototype.",
       "contributions": [
@@ -115,7 +115,7 @@
     },
     {
       "id": "aquaflush",
-      "title": "AquaFlush",
+      "title": "AquaFlush water-flow monitoring",
       "subtitle": "Water-flow monitoring prototype",
       "category": "embedded",
       "kind": "EMBEDDED · SENSOR INTEGRATION",
@@ -126,7 +126,7 @@
         "Interrupts",
         "Flow sensing"
       ],
-      "description": "An Arduino prototype that estimates water flow from sensor pulses, demonstrated with a miniature drainage model.",
+      "description": "An Arduino Uno prototype that estimates water flow by counting sensor pulses with interrupts. My work included programming, wiring the components, and helping build a miniature drainage model for demonstration.",
       "role": "Arduino programming · Circuit integration",
       "overview": "An Arduino Uno water-flow monitoring prototype built around interrupt-based pulse counting and a miniature drainage demonstration model.",
       "contributions": [
@@ -152,7 +152,7 @@
         "PLC",
         "HMI"
       ],
-      "description": "A simulated oven controller with adjustable temperatures, a monitoring screen, door safety checks, and overheating alarms.",
+      "description": "A CODESYS simulation for drying metal fixtures containing heat-sensitive rubber O-rings. PLC logic and HMI screens manage temperature settings, door interlocks, status indicators, overheating alarms, and automatic shutdown.",
       "role": "PLC logic & HMI development",
       "overview": "A CODESYS drying-oven simulation for metal fixtures containing heat-sensitive rubber O-rings, combining PLC control logic and HMI monitoring screens.",
       "contributions": [
@@ -169,7 +169,7 @@
     },
     {
       "id": "coin",
-      "title": "Touch-sensitive coin tosser",
+      "title": "Touch-sensitive electronic coin tosser",
       "category": "embedded",
       "kind": "ELECTRONICS · PROTOTYPING",
       "status": "Circuit prototype",
@@ -179,7 +179,7 @@
         "PCB soldering",
         "Fusion 360"
       ],
-      "description": "A touch-sensitive electronic coin tosser. My work covered circuit assembly, 3D modeling, and a 50-trial evaluation.",
+      "description": "A circuit developed through breadboard prototyping and PCB soldering, with 3D models and an animation made in Autodesk Fusion 360. Evaluation covered 50 trials across five potentiometer settings to check LED outputs and circuit behavior.",
       "role": "Circuit prototyping · 3D modeling & evaluation",
       "overview": "A touch-sensitive electronic coin tosser developed through breadboard prototyping, PCB assembly, 3D modeling, and structured circuit trials.",
       "contributions": [
@@ -206,7 +206,7 @@
         "ATmega328P",
         "L298N"
       ],
-      "description": "An Arduino robot that follows a line using two infrared sensors. I built and documented the hardware.",
+      "description": "An Arduino Uno (ATmega328P) robot that follows a line using two infrared sensors, an L298N motor driver, and DC motors. I built and documented the hardware.",
       "role": "Hardware integration & documentation",
       "overview": "Built and documented the hardware for an Arduino Uno (ATmega328P) line-following robot, integrating two infrared sensors, an L298N motor driver, and DC motors for autonomous line tracking.",
       "contributions": [
@@ -232,7 +232,7 @@
         "ATmega328P",
         "Microchip Studio"
       ],
-      "description": "AVR assembly exercises for the ATmega328P, covering register operations, the stack, calculations, searching, and digital inputs and outputs.",
+      "description": "AVR assembly exercises covering register operations, stack management, coin-value calculations, and binary search. Work also includes ATmega328P digital inputs and outputs with hexadecimal mapping from 0 to F.",
       "role": "AVR assembly programming & simulation",
       "overview": "AVR firmware development and simulation coursework, including register operations, stack management, coin-value calculations, binary search, and ATmega328P digital I/O with hexadecimal input mapping from 0 to F.",
       "contributions": [
@@ -246,123 +246,239 @@
           "url": "https://sites.google.com/g.msuiit.edu.ph/firmware-programming-projects?usp=sharing"
         }
       ]
+    },
+    {
+      "id": "brainboard",
+      "title": "BrainBoard quiz game",
+      "status": "Embedded project",
+      "tags": [
+        "RA6M3",
+        "RT-Thread",
+        "LVGL"
+      ],
+      "description": "A touchscreen quiz game built with RT-Thread and LVGL on the RA6M3. It combines quizzes, live scoring, and time tracking.",
+      "links": [
+        {
+          "label": "View the BrainBoard project",
+          "url": "https://www.hackster.io/ps/brainboard-test-your-wits-and-score-some-bits-d3301f"
+        }
+      ]
+    },
+    {
+      "id": "audio-player",
+      "title": "STM32 FreeRTOS audio player",
+      "status": "Embedded project",
+      "tags": [
+        "STM32F407",
+        "FreeRTOS",
+        "I2S",
+        "DMA"
+      ],
+      "description": "An STM32F407 audio player that turns binary song selections into synthesized melodies using I2S and DMA. FreeRTOS keeps the playback controls responsive.",
+      "links": [
+        {
+          "label": "View GitHub repository",
+          "url": "https://github.com/msyennna/stm32-freertos-audio-player"
+        }
+      ]
     }
   ],
   "toolkit": [
     {
-      "icon": "code",
-      "index": "01",
-      "title": "Programming & data",
+      "title": "Programming and data",
       "tools": [
-        "C / C++",
+        "C/C++",
         "Python",
-        "SQL / SQLite",
+        "SQL and SQLite",
         "AVR assembly coursework"
       ]
     },
     {
-      "icon": "chip",
-      "index": "02",
-      "title": "Embedded & connected",
+      "title": "Embedded systems and IoT",
       "tools": [
-        "STM32 · Arduino",
-        "FreeRTOS · RT-Thread",
-        "ADC · I²C · UART",
-        "MQTT / TLS"
+        "STM32",
+        "ESP32",
+        "Raspberry Pi 5",
+        "Arduino Uno",
+        "RT-Thread",
+        "FreeRTOS",
+        "sensor integration",
+        "task scheduling",
+        "queues",
+        "ADC",
+        "I²C",
+        "UART",
+        "MQTT/TLS"
       ]
     },
     {
-      "icon": "spark",
-      "index": "03",
-      "title": "AI & applications",
+      "title": "AI and applications",
       "tools": [
         "YOLOv8n",
-        "Raspberry Pi 5",
+        "Edge Impulse",
         "Flask",
-        "Qt Widgets"
+        "Qt Widgets",
+        "Android Studio"
       ]
     },
     {
-      "icon": "book",
-      "index": "04",
       "title": "Development tools",
       "tools": [
-        "Git / GitHub",
-        "VS Code · PlatformIO",
+        "Git and GitHub",
+        "Visual Studio Code",
+        "PlatformIO",
+        "STM32CubeIDE",
         "RT-Thread Studio",
-        "Wokwi · CODESYS",
-        "Microchip Studio"
+        "Arduino IDE",
+        "Microchip Studio",
+        "SimulIDE",
+        "Wokwi"
+      ]
+    },
+    {
+      "title": "Prototyping",
+      "tools": [
+        "Autodesk Fusion 360",
+        "Adobe Photoshop",
+        "SquareLine Studio",
+        "breadboard circuits",
+        "PCB layout and soldering",
+        "laser cutting",
+        "CNC router operation"
       ]
     }
   ],
   "experience": [
     {
-      "date": "AUG 2025 — PRESENT",
+      "date": "August 2025 – Present",
       "title": "Online ESL Teacher",
       "org": "NativeCamp · Remote",
-      "text": "Adapt English lessons to individual proficiency levels and learning goals, with feedback on pronunciation, grammar, and conversation."
+      "text": ""
     },
     {
-      "date": "AUG — SEP 2023",
-      "title": "Point-of-Sale Associate",
-      "org": "Iligan 2L Construction Supply",
-      "text": "Process point-of-sale transactions and cash payments, and help customers with purchases and inquiries."
-    },
-    {
-      "date": "FEB — MAR 2023",
+      "date": "February – March 2023",
       "title": "Student Intern",
       "org": "MSU-IIT FAB LAB Mindanao · Work immersion",
-      "text": "Operate laser cutters and CNC routers, create 2D designs and 3D models, and support equipment maintenance and STEM prototyping."
+      "text": "Operated laser cutters and CNC routers, created 2D designs and 3D models using Autodesk Fusion 360 and Adobe Photoshop, and supported equipment maintenance and STEM projects."
     }
   ],
   "leadership": [
     {
-      "date": "2026 — PRESENT",
-      "title": "Legislative Secretary",
-      "org": "Administrative Committee · CCS Student Council, MSU-IIT",
-      "text": "Record legislative proceedings and maintain official documents and correspondence."
+      "date": "2026 – Present",
+      "title": "Legislative Secretary, Administrative Committee",
+      "org": "College of Computer Studies Student Council · MSU-IIT",
+      "text": ""
     },
     {
-      "date": "2025 — 2026",
-      "title": "Co-Chairperson, Ways and Means",
-      "org": "CCS Student Council · MSU-IIT",
-      "text": "Co-lead fundraising initiatives and support budget planning and sponsorship arrangements."
+      "date": "2025 – 2026",
+      "title": "Co-Chairperson, Ways and Means Committee",
+      "org": "College of Computer Studies Student Council · MSU-IIT",
+      "text": ""
     },
     {
-      "date": "NOVEMBER 2025",
-      "title": "Lead, Program & Technical Committee",
-      "org": "my.ComApps Technology Symposium and Exhibit",
-      "text": "Support program coordination, sound system operation, and technical requirements for the RT-Thread technology symposium and exhibit."
-    },
-    {
-      "date": "OCTOBER 2025",
-      "title": "Co-Lead, Sponsorship Team",
-      "org": "Iligan Campus DEVCON 2025",
-      "text": "Coordinate sponsorship planning for Campus Code Collab 2025: Empowering Student Innovators."
-    },
-    {
-      "date": "SEPTEMBER 2025",
-      "title": "Event Organizer",
-      "org": "IEEE Smart Mobility Hackathon · MSU-IIT",
-      "text": "Support event organization for a hackathon focused on smart mobility."
-    },
-    {
-      "date": "2024 — 2025",
+      "date": "2024 – 2025",
       "title": "Secretary, Special Events Committee",
-      "org": "CCS Student Council · MSU-IIT",
-      "text": "Prepare committee records and event reports to support student activity planning."
+      "org": "College of Computer Studies Student Council · MSU-IIT",
+      "text": ""
     },
     {
-      "date": "DECEMBER 2024",
-      "title": "Lead, Registration Committee",
-      "org": "my.ComApps Technology Development Program",
-      "text": "Manage participant registration and monitor attendance during a three-day technology development workshop."
-    },
-    {
-      "date": "2023 — 2024",
+      "date": "2023 – 2024",
       "title": "Undersecretary, Computer Applications Society",
       "org": "College of Computer Studies · MSU-IIT",
       "text": ""
+    },
+    {
+      "date": "November 2025",
+      "title": "Lead, Program and Technical Committee",
+      "org": "my.ComApps Technology Symposium and Exhibit · MSU-IIT",
+      "text": ""
+    },
+    {
+      "date": "October 2025",
+      "title": "Co-Lead, Sponsorship Team",
+      "org": "Iligan Campus DEVCON 2025",
+      "text": ""
+    },
+    {
+      "date": "September 2025",
+      "title": "Event Organizer",
+      "org": "IEEE Smart Mobility Hackathon · MSU-IIT",
+      "text": ""
+    },
+    {
+      "date": "December 2024",
+      "title": "Lead, Registration Committee",
+      "org": "my.ComApps – A Technology Development Program · MSU-IIT",
+      "text": ""
+    }
+  ],
+  "awards": [
+    {
+      "title": "Champion, Best in Pitching",
+      "detail": "TechShowcase 2025: Innovations in Application Development and Emerging Technologies · Team award",
+      "date": "December 2025"
+    },
+    {
+      "title": "1st Runner-Up, Best in Innovative System",
+      "detail": "TechShowcase 2025: Innovations in Application Development and Emerging Technologies · Team award",
+      "date": "December 2025"
+    },
+    {
+      "title": "Certificate of Commendation",
+      "detail": "Computer Applications, CCC102 Computer Programming 2 · MSU-IIT",
+      "date": "March 2025"
+    },
+    {
+      "title": "Champion, Sustainable Innovation Pitch",
+      "detail": "2024 Sustainable Development Day Celebration · MSU-IIT · Team award",
+      "date": "September 25, 2024"
+    },
+    {
+      "title": "Learner Sharer Speaker",
+      "detail": "Grade 10 Senior High School Orientation · Tomas Cabili National High School",
+      "date": "April 2023"
+    },
+    {
+      "title": "Fourth Place, Winning Coach",
+      "detail": "Siyensikula, Senior High School Category, Division Science and Technology Fair · Tomas Cabili National High School",
+      "date": "December 14, 2022"
+    }
+  ],
+  "training": [
+    {
+      "title": "AI Career Readiness Training",
+      "detail": "ASEAN Foundation",
+      "date": "October 2026"
+    },
+    {
+      "title": "Media and Information Literacy",
+      "detail": "ASEAN Foundation",
+      "date": "October 2026"
+    },
+    {
+      "title": "AI Ready ASEAN – AI Learning Modules (12 hours)",
+      "detail": "ASEAN Foundation",
+      "date": "October 2026"
+    },
+    {
+      "title": "Networking Basics",
+      "detail": "Cisco Networking Academy",
+      "date": "September 2026"
+    },
+    {
+      "title": "Operating Systems Basics",
+      "detail": "Cisco Networking Academy",
+      "date": "September 2026"
+    },
+    {
+      "title": "Computer Hardware Basics",
+      "detail": "Cisco Networking Academy",
+      "date": "September 2026"
+    },
+    {
+      "title": "Startup Basics 101",
+      "detail": "iDEYA: Center of Innovation and Technopreneurship · MSU-IIT",
+      "date": "September 2026"
     }
   ]
 }

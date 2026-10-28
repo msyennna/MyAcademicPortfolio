@@ -1,6 +1,6 @@
 # Phoebien D. Cañete Portfolio
 
-A simple, text-only academic portfolio with an introduction, background, nine projects, a conference paper, contact links, and a downloadable CV. Longer education, experience, training, and leadership information appears in expandable sections.
+A simple, text-only academic portfolio with soft red accents with an introduction, background, eleven projects, a conference paper, contact links, and a downloadable CV. Longer education, experience, training, and leadership information appears in expandable sections.
 
 The page uses HTML and CSS. Content and expandable sections work without JavaScript. There are no photos, project illustrations, pop-ups, filters, or external font dependencies.
 
@@ -37,11 +37,11 @@ The preview normally opens at `http://localhost:3000`. No dependency installatio
 
 | File | What to edit |
 | --- | --- |
-| `src/index.html` | Introduction, education, research paper, recognition, training, and contact details |
-| `src/content.json` | Projects, tools, work experience, and leadership |
+| `src/index.html` | Introduction, education, research paper and contact details |
+| `src/content.json` | Projects, tools, work experience, leadership, awards, and training |
 | `src/styles.css` | Colors, typography, spacing, and responsive styles |
 | `dist/assets/phoebien-canete-cv.docx` | Downloadable CV |
 
 Run `npm run build` after editing. It generates `dist/index.html`, copies the stylesheet, and checks local assets, navigation targets, duplicate IDs, and text-only output.
 
-Descriptions and individual roles come from the supplied portfolio. Aphid research remains labeled ongoing; simulations and prototypes keep their stated status. The conference paper retains its full title, all five authors, conference name, location, and dates. The original CV is included without modification.
+Descriptions and individual roles come from the supplied portfolio. Aphid research remains labeled ongoing; simulations and prototypes keep their stated status. The conference paper retains its full title, all five authors, conference name, location, and dates. The latest uploaded CANETE.docx is included as the downloadable CV without changing its contents. The page follows its current academic profile, two experience entries, eleven projects, six honors and awards, eight leadership entries, seven training entries, and expanded skills list.
