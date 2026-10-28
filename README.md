@@ -1,71 +1,71 @@
 # Phoebien D. Cañete Portfolio
 
-A personal portfolio featuring my embedded systems projects, edge AI and IoT research, desktop applications, education, experience, and student leadership at MSU-IIT.
-
-Built with HTML, CSS, and JavaScript. Includes project filters and detail views, responsive layouts, light and dark themes, a downloadable CV, and contact links. All website assets are included locally.
+A responsive portfolio of embedded systems, edge AI and AIoT, IoT research, and software projects by Phoebien D. Cañete, a BS Computer Applications student majoring in Embedded Systems at MSU-IIT.
 
 [GitHub](https://github.com/msyennna) · [LinkedIn](https://www.linkedin.com/in/phoebiencanete/) · [Hackster](https://www.hackster.io/phoebiencanete) · [Email](mailto:phoebiend@gmail.com)
 
-## Publish with GitHub Pages
+The portfolio includes nine projects, an EUSPN 2026 peer-reviewed conference paper with full author credit, education, work experience, eight leadership and activity entries, honors, training, spoken languages, and a downloadable CV. The latest update follows the supplied `Canete_CV(3).docx`.
 
-The GitHub username used in the supplied CV is `msyennna`. For a personal site, name the repository **`msyennna.github.io`**. If you are using a different account, replace `msyennna` with that account's username.
+## Update MyAcademicPortfolio
 
-1. Create a public GitHub repository named `msyennna.github.io`, with `main` as its default branch. Add a README when creating it so the branch exists.
-2. Extract this ZIP on your computer. Open the extracted `phoebien-github-portfolio` folder.
-3. In the repository, choose **Add file → Upload files**. Drag all the files and folders from INSIDE `phoebien-github-portfolio` onto the upload page, including the `.github` folder. Commit the upload to `main`. Replace the starter README with the README in this package.
-4. Open **Settings → Pages**. Under **Build and deployment → Source**, select **GitHub Actions**. The workflow is already included, so skip choosing or creating another workflow.
-5. Open **Actions → Deploy portfolio to GitHub Pages → Run workflow**. Choose `main`, then run it. The initial upload can trigger a failed run if Pages was not enabled yet; run it again after step 4.
-6. After the workflow succeeds, the deployment link appears in the workflow summary and **Settings → Pages**. For the repository name above, the expected address is `https://msyennna.github.io/`.
+Target repository: `msyennna/MyAcademicPortfolio`.
 
-The workflow deploys only `dist/`. Repository documentation and local development scripts are not part of the published site. Future commits to `main` automatically publish updates.
+1. Extract this ZIP and open the `phoebien-github-portfolio` folder.
+2. Open your existing GitHub repository and choose **Add file → Upload files**.
+3. Drag the **dist folder** onto the upload page. It must appear as `dist/index.html` and `dist/assets/...` in the repository. This updates the portfolio and its downloadable CV.
+4. Commit the upload to `main`.
+5. If this repository is connected to your Vercel project, the commit should start a new deployment. Check **Vercel → your project → Deployments** for its result.
 
-**Upload the extracted contents, not the ZIP itself.** Your repository should contain `.github`, `dist`, `scripts`, `README.md`, `package.json`, and `vercel.json` at the top level. Do not put the entire `phoebien-github-portfolio` wrapper folder inside the repository.
+For this content update, only the website files under `dist/` need replacing. Keep your other repository files and hosting settings. Upload the extracted folder contents, not the ZIP as a single repository file.
 
-You can also use a repository named `portfolio` instead of a user-site repository. Its expected address would be `https://msyennna.github.io/portfolio/`. Website assets use relative paths, so both address formats work.
+If you are setting up the repository from scratch, upload all extracted contents so `package.json`, `vercel.json`, `scripts`, `dist`, and `README.md` are at the repository root, without an extra wrapper directory.
 
-## Deploy the same repository to Vercel
+## Vercel settings
 
-Import this GitHub repository into Vercel as a new project. The included `vercel.json` sets:
+The included `vercel.json` declares:
 
 | Setting | Value |
 | --- | --- |
 | Framework preset | Other |
-| Root directory | Repository root |
+| Root directory | Folder containing `package.json` and `vercel.json` |
 | Build command | `npm run build` |
 | Output directory | `dist` |
+| Environment variables | None required |
 
-No environment variables or API keys are required. Vercel assigns a deployment URL after a successful deployment. Hosting with Vercel does not require enabling GitHub Pages.
+Vercel assigns the live URL after a successful deployment. GitHub Pages is optional when Vercel hosts the site.
 
-## Run locally
+## Local preview
 
-With Node.js 20 or later installed, run these commands from the repository folder:
+With Node.js 20 or later installed, run:
 
 ```sh
 npm run build
 npm run dev
 ```
 
-Open `http://localhost:3000`. There are no dependencies to install. The build command checks JavaScript syntax, asset files, and navigation anchors; `dist/` is already the complete editable website.
+Open `http://localhost:3000`. No dependencies or API keys are required. The build command validates JavaScript syntax, asset files, and navigation anchors. `dist/` is the complete editable static website.
 
-## Update the portfolio
+## Editing guide
 
-| File | What to edit |
+| File | Content |
 | --- | --- |
+| `dist/index.html` | Introduction, education, paper, awards, training, languages, contact links, and metadata |
 | `dist/assets/content.js` | Projects, project links, tools, experience, and leadership |
-| `dist/index.html` | Introduction, education, awards, training, contact details, and page metadata |
-| `dist/assets/styles.css` | Colors, typography, and layout |
+| `dist/assets/app.js` | Illustrations, filters, dialogs, themes, and interactions |
+| `dist/assets/styles.css` | Colors, typography, layouts, and responsive styles |
 | `dist/assets/phoebien.webp` | Portrait |
-| `dist/assets/phoebien-canete-cv.docx` | Downloadable CV |
-| `.github/workflows/deploy-pages.yml` | GitHub Pages deployment workflow |
-| `vercel.json` | Vercel deployment settings |
+| `dist/assets/phoebien-canete-cv.docx` | Latest CV, copied without modification |
 
-Commit your changes to `main` to update the published GitHub Pages site. If you change the default branch name, update the `branches` value in the deployment workflow.
+The aphid damage detection research is ongoing. Shared work describes individual contributions. The conference paper lists all authors, the conference, its location, and dates. Project illustrations are labeled as concepts rather than screenshots. The contact link opens the visitor's mail application; the site does not send or store messages.
 
-The aphid damage detection research is ongoing. Shared projects describe my individual contributions. Project artwork is labeled as a concept illustration, not a screenshot. The portrait comes from my linked research page, and the CV is the supplied document. The contact link opens the visitor's mail app; this static site does not send or store messages.
+## Optional GitHub Pages
+
+The package retains `.github/workflows/deploy-pages.yml` for GitHub Pages hosting. It deploys `dist/`. Enable **Settings → Pages → Source → GitHub Actions**, then run **Actions → Deploy portfolio to GitHub Pages → Run workflow**. This is separate from Vercel hosting.
+
+For this repository, the expected GitHub Pages address would be `https://msyennna.github.io/MyAcademicPortfolio/` after a successful Pages deployment. All asset paths are relative, so the site also works under that repository path.
 
 ## Hosting references
 
-- [GitHub Pages quickstart](https://docs.github.com/en/pages/quickstart)
-- [Configure the publishing source](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site)
-- [Use a custom GitHub Pages workflow](https://docs.github.com/en/pages/getting-started-with-github-pages/using-custom-workflows-with-github-pages)
+- [Vercel GitHub integration](https://vercel.com/docs/git/vercel-for-github)
 - [Vercel configuration](https://vercel.com/docs/project-configuration/vercel-json)
+- [GitHub Pages publishing sources](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site)
